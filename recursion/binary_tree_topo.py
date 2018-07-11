@@ -7,6 +7,12 @@ Problem:
 Requires:
     (1) achieve the algorithm in recursion style (not efficient)
     (2) efficient with extra space, record the topology number for each node number
+Ways:
+    Similar with Fibonacci number problem
+    ref: http://www.aminariana.com/problems/binary-tree-topologies
+Questions:
+    for n <= 10, this solution generate the same results with ref
+    however, for n = 100 and n = 500, the results are in large difference
 '''
 
 ### solution 1 ###
