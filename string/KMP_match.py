@@ -1,3 +1,18 @@
+'''
+Problem:
+    Given a text txt[0..n-1] and a pattern pat[0..m-1] (n > m),
+    write a function search(char pat[], char txt[]) that prints all occurrences of pat[] in txt[].
+Requires:
+    Use the KMP (Knuth Morris Pratt) Pattern Searching algorithm
+Ways:
+    The core idea of KMP algorithm is:
+    whenever we detect a mismatch (after some matches),
+    we already know some of the characters in the text of next window.
+    We take advantage of this information to avoid matching the characters that we know will anyway match
+Waiting:
+    The implementation of calculating the next array in a elegant way is incorrect
+'''
+
 def get_next_array(arr):
 	value = 1
 	for ilen in range(1, len(arr)):
@@ -13,12 +28,38 @@ def get_next(array):
 		next_array[iarr] = get_next_array(array[:iarr])
 	return next_array
 
-# a = 'abcabx'
-# print(get_next(a))
+
+# # the code for calculate next arrary is incorrect
+# def get_next_new(array):
+#     # num = len(array)
+#     # arr_next = [0] * num
+#     # c_len = 0
+#     # i = 1
+#     # while i:
+#     #     if arr_next[i] == arr_next[c_len]:
+#     #         c_len += 1
+#     #         arr_next[i] = c_len
+#     #         i += 1
+#     #     else:
+#     #         if c_len != 0:
+#     #             c_len = arr_next[c_len - 1]
+#     #         else:
+#     #             arr_next[i] = 0
+#     #             i += 1
+#     # while i < num:
+#     #     if c_len == 0 or arr_next[i] == arr_next[c_len]:
+#     #         c_len += 1
+#     #         arr_next[i] = c_len
+#     #         i += 1
+#     #     else:
+#     #         c_len = arr_next[c_len - 1]
+#     return arr_next
 
 str_pri = 'ABABABCABABABCABABABC'
 str_tar = 'ABABAC'
 next_val = get_next(str_tar)
+# next_val = get_next_new(str_tar)
+print(next_val)
 
 jtar = 0
 ipri = 0
