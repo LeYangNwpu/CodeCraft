@@ -18,9 +18,27 @@ def sum_cost(cost):
         cost_sum[iobj] += cost_sum[iobj + 1]
     return cost_sum
 
+# unfinish
+# version 5
+# record which object should be put into bag
+# def zero_one_package(cost, value, bagsize):
+#     obj_num = len(value)
+#
+#     f = [0] * (bagsize + 1)
+#     for iobj in range(obj_num):
+#         tag = [0] * obj_num
+#         for jsize in range(bagsize, -1, -1):
+#             # check the volume of bag can hold the object
+#             if jsize >= cost[iobj]:
+#                 f_in_item = f[jsize-cost[iobj]] + value[iobj]
+#                 if f_in_item > f[jsize]:
+#                     f[jsize] = f_in_item
+#                     tag[iobj] = 1
+#     return f[1:], tag
 
-# version 4
-# restrict the bag must be full
+
+# # version 4
+# # restrict the bag must be full
 def zero_one_package(cost, value, bagsize):
     obj_num = len(value)
     f = [-1000000] * (bagsize + 1)
@@ -64,6 +82,7 @@ def zero_one_package(cost, value, bagsize):
 #                 f[jsize] = f_in_item
 #     return f[1:]
 
+
 # # version 1
 # def zero_one_package(cost, value, bagsize):
 #     obj_num = len(value)
@@ -77,9 +96,10 @@ def zero_one_package(cost, value, bagsize):
 #                     f[jsize] = f_in_item
 #     return f[1:]
 
-bagsize = 12
+bagsize = 10
 cost = [2, 2, 6, 5, 4]
 value = [6, 3, 5, 4, 6]
-result = zero_one_package(cost, value, bagsize)
+result, tag = zero_one_package(cost, value, bagsize)
 print(result, len(result))
+print(tag)
 
