@@ -31,8 +31,34 @@ def make_change(s, m, n):
 			table[icha][jcoin] = x + y
 	return table[n][m-1]
 
+def make_change_imp(s, m, n):
+	table = [0] * (n + 1)
+	table[0] = 1
+	# first loop different object
+	for jcoin in range(m):
+		# then loop the bagsize
+		for icha in range(s[jcoin], n+1):
+			table[icha] += table[icha - s[jcoin]]
+	return table[n]
+
+def make_change_rec(s, m, n):
+	# no change
+	if n == 0:
+		return 1
+	#
+	if n < 0:
+		return 0
+	#
+	if (m == 0) and (n >= 1):
+		return 0
+
+	return make_change_rec(s, m-1, n) + make_change_rec(s, m, n-s[m-1])
+
+
 s = [2,3,5,6]
 m = len(s)
-n = 10
-ways = make_change(s, m, n)
+n = 20
+# ways = make_change(s, m, n)
+# ways = make_change_imp(s, m, n)
+ways = make_change_rec(s, m, n)
 print(ways)
