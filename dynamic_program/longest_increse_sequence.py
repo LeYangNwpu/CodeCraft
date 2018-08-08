@@ -34,7 +34,23 @@ def lis(arr):
     _lis(arr, n)
     return maximum
 
+
+def lis_optim(arr):
+    n = len(arr)
+    # lis_doc
+    lis_doc = [1] * n
+    for i in range(n):
+        for j in range(i):
+            if arr[j] < arr[i] and (lis_doc[j]+1 > lis_doc[i]):
+                lis_doc[i] = lis_doc[j] + 1
+    print(lis_doc)
+    maximum = 1
+    for i in range(n):
+        maximum = max(lis_doc[i], maximum)
+    return maximum
+
+
 arr = [10 , 22 , 9 , 33 , 21 , 50 , 41 , 60]
 n = len(arr)
 
-print(lis(arr))
+print(lis_optim(arr))

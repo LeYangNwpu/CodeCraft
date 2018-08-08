@@ -16,27 +16,52 @@ Ref:
 
 import numpy as np
 
+
+# bulid the table from left to right, from upper to lower
 def get_01_package(weight, value, bag_size):
     num_obj = len(weight)
     arr_val = np.zeros((num_obj, bag_size))
     # loop each size
     for jcol in range(bag_size):
         # loop each object
-        for irow in range(num_obj-1,-1, -1):
+        for irow in range(num_obj):
             if weight[irow] > jcol+1:
                 # package irow can not hold item
-                if irow == num_obj-1:
+                if irow == 0:
                     arr_val[irow, jcol] = 0
                 else:
-                    arr_val[irow, jcol] = arr_val[irow+1, jcol]
+                    arr_val[irow, jcol] = arr_val[irow-1, jcol]
             else:
                 # package irow can hold item
-                if irow == num_obj - 1:
+                if irow == 0:
                     arr_val[irow, jcol] = value[irow]
                 else:
-                    value_in_item = value[irow] + arr_val[irow+1, jcol-weight[irow]]
-                    arr_val[irow, jcol] = value_in_item if value_in_item > arr_val[irow+1, jcol] else arr_val[irow+1, jcol]
+                    value_in_item = value[irow] + arr_val[irow-1, jcol-weight[irow]]
+                    arr_val[irow, jcol] = value_in_item if value_in_item > arr_val[irow-1, jcol] else arr_val[irow-1, jcol]
     return arr_val
+
+# # bulid the table from left to right, from lower to upper
+# def get_01_package(weight, value, bag_size):
+#     num_obj = len(weight)
+#     arr_val = np.zeros((num_obj, bag_size))
+#     # loop each size
+#     for jcol in range(bag_size):
+#         # loop each object
+#         for irow in range(num_obj-1,-1, -1):
+#             if weight[irow] > jcol+1:
+#                 # package irow can not hold item
+#                 if irow == num_obj-1:
+#                     arr_val[irow, jcol] = 0
+#                 else:
+#                     arr_val[irow, jcol] = arr_val[irow+1, jcol]
+#             else:
+#                 # package irow can hold item
+#                 if irow == num_obj - 1:
+#                     arr_val[irow, jcol] = value[irow]
+#                 else:
+#                     value_in_item = value[irow] + arr_val[irow+1, jcol-weight[irow]]
+#                     arr_val[irow, jcol] = value_in_item if value_in_item > arr_val[irow+1, jcol] else arr_val[irow+1, jcol]
+#     return arr_val
 
 bag_size = 12
 weight = [2, 2, 6, 5, 4]
