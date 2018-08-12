@@ -5,7 +5,7 @@ Requires:
     the space complexity should be O(N)
 Ways:
     (1)for the loop about bagsize, from large to small
-    (2)f[i] means the maximum value when select from the first i objects
+    (2)f[i] means the maximum value when the bagsize is i
        f[0] means the value for no object
     (3)the initialization corresponding to whether require the bag to be full
 '''
