@@ -1,31 +1,46 @@
-# A Naive recursive Python program to fin minimum number
-# operations to convert str1 to str2
-def editDistance(str1, str2, m, n):
-    # If first string is empty, the only option is to
-    # insert all characters of second string into first
-    if m == 0:
-        return n
+# Dynamic Programming Python implementation of Matrix
+# Chain Multiplication. See the Cormen book for details
+# of the following algorithm
+import sys
 
-    # If second string is empty, the only option is to
-    # remove all characters of first string
-    if n == 0:
-        return m
 
-    # If last characters of two strings are same, nothing
-    # much to do. Ignore last characters and get count for
-    # remaining strings.
-    if str1[m - 1] == str2[n - 1]:
-        return editDistance(str1, str2, m - 1, n - 1)
+# Matrix Ai has dimension p[i-1] x p[i] for i = 1..n
+def MatrixChainOrder(p, n):
+    # For simplicity of the program, one extra row and one
+    # extra column are allocated in m[][].  0th row and 0th
+    # column of m[][] are not used
+    m = [[0 for x in range(n)] for x in range(n)]
 
-    # If last characters are not same, consider all three
-    # operations on last character of first string, recursively
-    # compute minimum cost for all three operations and take
-    # minimum of three values.
-    return 1 + min(editDistance(str1, str2, m, n - 1),  # Insert
-                   editDistance(str1, str2, m - 1, n),  # Remove
-                   editDistance(str1, str2, m - 1, n - 1)  # Replace
-                   )
+    # m[i,j] = Minimum number of scalar multiplications needed
+    # to compute the matrix A[i]A[i+1]...A[j] = A[i..j] where
+    # dimension of A[i] is p[i-1] x p[i]
 
-str1 = "sunday"
-str2 = "saturday"
-print(editDistance(str1, str2, len(str1), len(str2)))
+    # # cost is zero when multiplying one matrix.
+    for i in range(1, n):
+        m[i][i] = 0
+
+    # L is chain length.
+    for L in range(2, n):
+        for i in range(1, n - L + 1):
+            j = i + L - 1
+            m[i][j] = sys.maxunicode
+            for k in range(i, j):
+
+                # q = cost/scalar multiplications
+                q = m[i][k] + m[k + 1][j] + p[i - 1] * p[k] * p[j]
+                if q < m[i][j]:
+                    m[i][j] = q
+    print(m)
+
+    return m[1][n - 1]
+
+
+# Driver program to test above function
+arr = [1, 2, 3, 4]
+# arr = [10, 20, 30, 40, 30]
+size = len(arr)
+
+print("Minimum number of multiplications is " +
+      str(MatrixChainOrder(arr, size)))
+# This Code is contributed by Bhavya Jain
+
