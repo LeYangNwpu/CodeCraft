@@ -25,7 +25,7 @@ def insert_hash(hash_table, value):
 
 def search_hash(hash_table, value):
 	add = hash(value)
-	if hash_table[0, add] == 	NULLVALUE:
+	if hash_table[0, add] == NULLVALUE:
 		print('value %d not found' % value)
 	return add
 

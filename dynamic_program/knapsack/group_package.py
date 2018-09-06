@@ -45,36 +45,7 @@ bagsize = 10
 cost = [2, 2, 6, 5, 4]
 worth = [6, 3, 5, 4, 6]
 obj_num = len(cost)
-# print('zero one package')
-# f = [0] * (bagsize + 1)
-# for iobj in range(obj_num):
-# 	zero_one_package(cost[iobj], worth[iobj], bagsize, f)
-# print(f[1:])
 
-# print('complete package')
-# f = [0] * (bagsize + 1)
-# for iobj in range(obj_num):
-# 	complete_package(cost[iobj], worth[iobj], bagsize, f)
-# print(f[1:])
-
-# amount = [3, 2, 3, 1, 4]
-# print('multiple package')
-# f = [0] * (bagsize + 1)
-# for iobj in range(obj_num):
-# 	multiple_package(cost[iobj], worth[iobj], amount[iobj], bagsize, f)
-# print(f[1:])
-
-# worth = [6, 3, 5, 4, 6]
-# obj_num = len(cost)
-# bagsize_u = 10
-# cost_u = [2, 2, 6, 5, 4]
-# bagsize_v = 8
-# cost_v = [3, 1, 4, 4, 2]
-# print('multiple cost')
-# f = np.zeros((bagsize_u+1, bagsize_v+1))
-# for iobj in range(obj_num):
-#     complete_package_2d(worth[iobj], cost_u[iobj], cost_v[iobj], bagsize_u, bagsize_v, f)
-# print(f[1:, 1:])
 
 worth1 = [3, 4, 6, 5, 2]
 cost1 = [1, 3, 2, 4, 4]

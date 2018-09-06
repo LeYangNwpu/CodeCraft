@@ -26,24 +26,28 @@ def complete_knapsack(cost, value, bagsize):
 
 
 # version 2
-# # expand the cost and worth of each object with factor 2 ** k
-# # then, solve the problem with zero-one-package method
-# def seperate_obj(cost, worth, bagsize):
-#     cost_sep = []
-#     worth_sep = []
-#     # use zip for iterate two variables
-#     for icost, iworth in zip(cost, worth):
-#         num = 1
-#         cost_ori = icost
-#         worth_ori = iworth
-#         while cost_ori * num < bagsize:
-#             cost_sep.append(cost_ori * num)
-#             worth_sep.append(worth_ori * num)
-#             num *= 2
-#     return cost_sep, worth_sep
-# cost_sep, worth_sep = seperate_obj(cost, worth, bag_size)
-# f = complete_knapsack(cost_sep, worth_sep, bag_size)
+# expand the cost and worth of each object with factor 2 ** k
+# then, solve the problem with zero-one-package method
+def seperate_obj(cost, worth, bagsize):
+    cost_sep = []
+    worth_sep = []
+    # use zip for iterate two variables
+    for icost, iworth in zip(cost, worth):
+        num = 1
+        cost_ori = icost
+        worth_ori = iworth
+        while cost_ori * num < bagsize:
+            cost_sep.append(cost_ori * num)
+            worth_sep.append(worth_ori * num)
+            num *= 2
+    return cost_sep, worth_sep
 
+bag_size = 10
+cost = [2, 2, 6, 5, 4]
+worth = [6, 3, 5, 4, 6]
+cost_sep, worth_sep = seperate_obj(cost, worth, bag_size)
+f = complete_knapsack(cost_sep, worth_sep, bag_size)
+print(f)
 
 # version 1
 # a naive implementation with 2-dimension array
@@ -65,12 +69,12 @@ def complete_knapsack(cost, value, bagsize):
 #     return f[:,1:]
 
 
-bag_size = 10
-cost = [2, 2, 6, 5, 4]
-worth = [6, 3, 5, 4, 6]
-
-f = complete_knapsack(cost, worth, bag_size)
-print(f)
+# bag_size = 10
+# cost = [2, 2, 6, 5, 4]
+# worth = [6, 3, 5, 4, 6]
+#
+# f = complete_knapsack(cost, worth, bag_size)
+# print(f)
 
 
 
