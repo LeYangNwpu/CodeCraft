@@ -1,7 +1,7 @@
 '''
 Problem:
     geeksforgeeks write a function that takes in an array of integers
-    and return an array of length 2 representing the largest range of numbers
+    and return an array of length 2 representing the largest range of consist numbers
     contained in that array
 Way:
     Sort the array, find the largest consist sets

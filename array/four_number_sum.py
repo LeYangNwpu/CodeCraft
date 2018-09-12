@@ -8,7 +8,7 @@ Requires:
     time complexity should be O(n^2logn)
 Ways:
     calculate the sum of all possible two-element combination, then sort
-    in a sorted list, we can found out two elements that sum to a given value with in time complexity O(n)
+    in a sorted list, we can found out two elements that sum to a given value within time complexity O(n)
     adopt a new data structure, implement a modified sort function
 Reference:
     https://www.geeksforgeeks.org/find-four-elements-that-sum-to-a-given-value-set-2/

@@ -5,6 +5,7 @@ Requires:
     if there exists multiple longest palindromics
     the code should be efficient
 Way:
+    (this is the self-thought solution, although it can solve the problem, it may be complicated)
     for python, when check the palindromic, use s[::-1] to inverse the string
     loop from long to short
     for the substring problem, sliding window is a powerful tool.
