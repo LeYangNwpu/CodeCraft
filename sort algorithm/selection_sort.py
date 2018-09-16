@@ -1,6 +1,6 @@
 '''
 Problem:
-    insert sort
+    selection sort
 Way:
     1. scan the array from left to right, for each time, the comparision number is n-i(i=1,2,...,n-1)
        document the minimal number location, after scan, swap the minimal number to the forehead

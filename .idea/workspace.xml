@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77e6adc8-9617-41be-b302-8c1034a57461" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/dynamic_program/max_sum_increasing_sub.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sort algorithm/heap_sort.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dynamic_program/longest_increse_sequence.py" afterPath="$PROJECT_DIR$/dynamic_program/longest_increse_sequence.py" />
+      <change beforePath="$PROJECT_DIR$/sort algorithm/selection_sort.py" afterPath="$PROJECT_DIR$/sort algorithm/selection_sort.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,11 +23,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="selection_sort.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="selection_sort.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sort algorithm/selection_sort.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+            <state relative-caret-position="54">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -56,7 +53,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="max_sum_increasing_sub.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="max_sum_increasing_sub.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dynamic_program/max_sum_increasing_sub.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
@@ -176,10 +173,10 @@
         <option value="$PROJECT_DIR$/string/longest_palindromic_substring.py" />
         <option value="$PROJECT_DIR$/string/longest_palindromic_string.py" />
         <option value="$PROJECT_DIR$/array/three_number_sum.py" />
-        <option value="$PROJECT_DIR$/sort algorithm/selection_sort.py" />
         <option value="$PROJECT_DIR$/sort algorithm/heap_sort.py" />
         <option value="$PROJECT_DIR$/dynamic_program/longest_increse_sequence.py" />
         <option value="$PROJECT_DIR$/dynamic_program/max_sum_increasing_sub.py" />
+        <option value="$PROJECT_DIR$/sort algorithm/selection_sort.py" />
       </list>
     </option>
   </component>
@@ -455,8 +452,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17123288" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17123288" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882273" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24591948" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -755,14 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sort algorithm/selection_sort.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sort algorithm/heap_sort.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -790,6 +780,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sort algorithm/selection_sort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
