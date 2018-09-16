@@ -37,7 +37,8 @@ def lis(arr):
 
 def lis_optim(arr):
     n = len(arr)
-    # lis_doc
+    # lis_doc[i] means for a sub-sequence ended with element arr[i],
+    # the longest length
     lis_doc = [1] * n
     for i in range(n):
         for j in range(i):
@@ -51,6 +52,7 @@ def lis_optim(arr):
 
 
 arr = [10 , 22 , 9 , 33 , 21 , 50 , 41 , 60]
+# arr = [10 , 22 , 9]
 n = len(arr)
 
 print(lis_optim(arr))
