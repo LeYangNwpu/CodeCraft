@@ -3,11 +3,12 @@ Problem:
     Heap sort
 Ways:
     Heap data structure:
-      Big top heap, the value of root node is bigger than that of left node or right node
+      The heap is a complete binary tree
+      Max heap, the value of root node is bigger than that of left node or right node
       That is, the largest value is at the root node
-      Small top heap, the value of root node is smaller than that of left node or right node
+      Min heap, the value of root node is smaller than that of left node or right node
       That is, the smallest value is at the root node
-      We use big top heap
+      We use max heap
     Algorithm:
       in the heap, K_{i} >= K_{2i} and K_{i} >= K_{2i+1}, 1<=i<=int(n/2)
       Step1: construct a big top heap

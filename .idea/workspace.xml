@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77e6adc8-9617-41be-b302-8c1034a57461" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/sort algorithm/insert_sort.py" afterPath="$PROJECT_DIR$/sort algorithm/insert_sort.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/heap/convert_max_heap_to_min_heap.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/heap/heap_sort.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/heap/midean_of_stream.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/sort algorithm/heap_sort.py" afterPath="$PROJECT_DIR$/sort algorithm/heap_sort.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,11 +17,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="insert_sort.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sort algorithm/insert_sort.py">
+      <file leaf-file-name="heap_sort.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/heap/heap_sort.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="216">
+              <caret line="44" column="27" lean-forward="false" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="convert_max_heap_to_min_heap.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/heap/convert_max_heap_to_min_heap.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="6" column="63" lean-forward="true" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="midean_of_stream.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/heap/midean_of_stream.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="53" column="17" lean-forward="true" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -66,10 +90,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dynamic_program/max_subsum_no_adjacent.py" />
-        <option value="$PROJECT_DIR$/dynamic_program/get_01_package.py" />
-        <option value="$PROJECT_DIR$/dynamic_program/ref.py" />
-        <option value="$PROJECT_DIR$/dynamic_program/complete_knapsack_sep.py" />
         <option value="$PROJECT_DIR$/dynamic_program/complete_knapsack.py" />
         <option value="$PROJECT_DIR$/dynamic_program/zero_one_package.py" />
         <option value="$PROJECT_DIR$/dynamic_program/dependance_package.py" />
@@ -112,15 +132,19 @@
         <option value="$PROJECT_DIR$/string/longest_palindromic_substring.py" />
         <option value="$PROJECT_DIR$/string/longest_palindromic_string.py" />
         <option value="$PROJECT_DIR$/array/three_number_sum.py" />
-        <option value="$PROJECT_DIR$/sort algorithm/heap_sort.py" />
         <option value="$PROJECT_DIR$/dynamic_program/longest_increse_sequence.py" />
         <option value="$PROJECT_DIR$/dynamic_program/max_sum_increasing_sub.py" />
         <option value="$PROJECT_DIR$/sort algorithm/selection_sort.py" />
         <option value="$PROJECT_DIR$/sort algorithm/insert_sort.py" />
+        <option value="$PROJECT_DIR$/sort algorithm/heap_sort.py" />
+        <option value="$PROJECT_DIR$/heap/test.py" />
+        <option value="$PROJECT_DIR$/heap/heap_sort.py" />
+        <option value="$PROJECT_DIR$/heap/convert_max_heap_to_min_heap.py" />
+        <option value="$PROJECT_DIR$/heap/midean_of_stream.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1456" />
@@ -175,7 +199,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -187,16 +210,22 @@
             <path>
               <item name="CodeCraft" type="b2602c69:ProjectViewProjectNode" />
               <item name="CodeCraft" type="462c0819:PsiDirectoryNode" />
+              <item name="heap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CodeCraft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodeCraft" type="462c0819:PsiDirectoryNode" />
               <item name="sort algorithm" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/sort algorithm/insert_sort.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/heap/midean_of_stream.py" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunDashboard">
@@ -273,12 +302,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sort algorithm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/heap" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="CodeCraft" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sort algorithm/insert_sort.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/heap/midean_of_stream.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -391,15 +420,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24181548" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.115911484" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882273" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17462933" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27638736" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882273" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21515562" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2078346" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882273" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991881" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -453,22 +482,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dynamic_program/fuse.py" />
-    <entry file="file://$PROJECT_DIR$/dynamic_program/record.py" />
-    <entry file="file://$PROJECT_DIR$/dynamic_program/ugly_number.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic_program/number_of_ways_to_make_change.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dynamic_program/knapsack/zero_one_package.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="503">
@@ -663,7 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="7" column="96" lean-forward="false" selection-start-line="7" selection-start-column="96" selection-end-line="7" selection-end-column="96" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -685,7 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="26" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -703,14 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sort algorithm/heap_sort.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dynamic_program/longest_common_subsquence.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -722,7 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -730,7 +732,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -738,7 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="518">
           <caret line="37" column="62" lean-forward="false" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -746,14 +746,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
           <caret line="44" column="40" lean-forward="false" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sort algorithm/insert_sort.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
+        <state relative-caret-position="258">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heap/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sort algorithm/heap_sort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="53" column="22" lean-forward="false" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heap/heap_sort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="44" column="27" lean-forward="false" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heap/convert_max_heap_to_min_heap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="63" lean-forward="true" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heap/midean_of_stream.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="53" column="17" lean-forward="true" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
           <folding />
         </state>
       </provider>
