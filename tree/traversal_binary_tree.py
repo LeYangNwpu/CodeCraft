@@ -4,18 +4,21 @@ class Node:
 		self.right = None
 		self.value = key
 
+# for in-order traverse, left-->root-->right
 def printInorder(root):
     if root:
         printInorder(root.left)
         print(root.value)
         printInorder(root.right)
 
+# pre-order traverse, root-->left-->right
 def printPreorder(root):
     if root:
         print(root.value)
         printPreorder(root.left)
         printPreorder(root.right)
 
+# for post-order traverse, left-->right--root
 def printPostorder(root):
     if root:
         printPostorder(root.left)
