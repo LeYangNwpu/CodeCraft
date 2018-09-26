@@ -17,13 +17,13 @@ Problem:
     Try Morris traversal https://www.geeksforgeeks.org/inorder-tree-traversal-without-recursion-and-without-stack/
 '''
 
-class Node():
+class Node:
     def __init__(self, data):
         self.data = data
         self.left_child = None
         self.right_child = None
 
-class BST():
+class BST:
     def __init__(self):
         self.root = None
         self.former_value = - float('inf')
