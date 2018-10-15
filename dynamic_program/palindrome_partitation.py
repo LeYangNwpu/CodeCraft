@@ -40,8 +40,11 @@ def min_partitation_cuts(string):
     str_list = list(string)
     num = len(str_list)
     inf = float('inf')
-    C = [[inf] * num for i in range(num)]
-    P = [[False] * num for i in range(num)]
+    # we should maintain two matrix
+    # matrix C for record min cuts
+    C = [[inf] * num for _ in range(num)]
+    # matrix P for record whether arr[i, ..., j] is palindrome
+    P = [[False] * num for _ in range(num)]
     for i in range(num):
         C[i][i] = 0
         P[i][i] = True

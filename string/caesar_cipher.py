@@ -34,11 +34,26 @@ def caesar_cipher(str_list, shift, is_encoder):
     return ''.join(str_new)
 
 
+def encrypt(str_list, shift, is_encoder):
+	str_new = []
+	if not is_encoder:
+		shift *= -1
+	for s in str_list:
+		if s.isupper():
+			cha = chr((ord(s) + shift - 65) % 26 + 65)
+		else:
+			cha = chr((ord(s) + shift - 97) % 26 + 97)
+		str_new.append(cha)
+	return ''.join(str_new)
+
+
 text = "ATTACKATONCE"
 s = 4
-string = caesar_cipher(list(text), s, is_encoder=True)
+# string = caesar_cipher(list(text), s, is_encoder=True)
+string = encrypt(list(text), s, is_encoder=True)
 print(string)
-string = caesar_cipher(list(text), s, is_encoder=False)
+# string = caesar_cipher(list(text), s, is_encoder=False)
+string = encrypt(list(text), s, is_encoder=False)
 print(string)
 
 

@@ -3,6 +3,9 @@ Problem:
     heap sort
 Ways:
     maybe, simple recursive is a good solution
+    Notice:
+      for the same integer, there exists multiple min-/max- heap representation
+      but the heap sort result is the same
 Reference:
     https://www.geeksforgeeks.org/heap-sort/
 '''
@@ -46,6 +49,8 @@ def heap_sort(arr):
     # heap sort
     # notice that i = num-1, num-2, ..., 2, we cannot reach i=1
     # for i in range(num-1, 1, -1):
+    # 'i = num-1, num-2, ..., 1' is an optimzation of 'i = num-1, num-2, ..., 1, 0'
+    # when only exists one number arr[0], it must be the smallest or largest
     for i in range(num-1, 0, -1):
         arr[i], arr[0] = arr[0], arr[i]
         # heapify_no_rec(arr, 0, i-1)

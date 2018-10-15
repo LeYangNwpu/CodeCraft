@@ -3,15 +3,20 @@ Problem:
     Given a singly linked list and a position
     delete a linked list node at the given position.
 Way:
-    create the list, traverse it, and delete the required node
-    for deleting the nth node from end, an efficient way is to maintain two pointers,
+    1. create the list, traverse it, obtain length of the linked list, and delete the required node
+    2. for deleting the nth node from end, an efficient way is to maintain two pointers,
     move the first pointer n steps, then move these both two pointers until the first pointer reach the end,
     at this time, the second pointer indicates the node to be deleted
+    3. traverse the list, maintain a queue to record te nearest k+1 nodes
+    when reach list end, we can locate the kth_node from end
 Ref:
     https://www.geeksforgeeks.org/delete-a-linked-list-node-at-a-given-position/
     https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/
     find loop
     https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/
+Questions:
+    if the linked_list contain same numbers, it will be judged as contain loop
+    how to improve?
     
 '''
 
@@ -82,6 +87,7 @@ class LinkedList:
 
                 # remove end nth node
                 ptrf_2nd.next_node = ptrf_2nd.next_node.next_node
+
 
     def find_loop_sets(self):
         s = []

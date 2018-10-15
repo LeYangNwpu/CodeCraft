@@ -1,3 +1,34 @@
+'''
+quick sort
+Idea:
+  1. The partition function is the core of this algorithm, it first selects a key value
+    after a loop of operation, values smaller than key site on the left side
+    while values bigger than key site on the right
+  2. In partition function, we select the key value as the left data, key = arr[left]
+    after each swap operation, the left ptr or right ptr point to the key value
+  3. Optimization method
+    (1) Generate a good pivot key, median of three number
+    (2) Quick sort is efficient when the array contains many numbers.
+      On the contrary, simple sort algorithm is more efficient
+      Combine them together
+    (3) use tail recursion to replace the original two recursions
+Notice:
+  1. In the function qsort, do not forget the condition "if left < right:"
+Space time complexity:
+  Optimal status:
+    the pivot value is proper, which can equally partition the array
+    time complexity: O(n log n)
+    space complexity: O(long n)
+  Worst status:
+    the pivot value is the smallest or biggest value, one partition is empty
+    time complexity: O(n^2)
+    space complexity: O(n)
+Inspiration:
+  Similar with bubble sort, quick sort belong to exchange sort
+  the core idea is to make use of each comparison, site the smaller on one side, the bigger on the other side
+
+'''
+
 def swap(data, idx1, idx2):
 	temp = data[idx1]
 	data[idx1] = data[idx2]
@@ -14,9 +45,7 @@ def InsertSort(data):
             data[j + 1] = temp
 
 def generate_median(data, left, right):
-    median = left + (right - left) / 2
-    if data[right] < data[left]:
-        swap(data, right, left)
+    median = left + int((right - left) / 2)
     if data[right] < data[median]:
         swap(data, right, median)
     if data[left] < data[median]:

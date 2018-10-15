@@ -1,7 +1,9 @@
 '''
-Given two in-order sun-arraies, we can merge it to one larger array.
-Dispose the problem in recursive manner in two steps: msort and merge
-Partition the array when entering recursive, merge arrays when exiting recursive
+Idea:
+  Given two in-order sun-arraies, we can merge it to one larger array.
+  Dispose the problem in recursive manner in two steps: msort and merge
+  Partition the array when entering recursive, merge arrays when exiting recursive
+  When merge data, we should use an assistant array
 '''
 
 def merge(data, left, middle, right):
@@ -37,7 +39,7 @@ def merge(data, left, middle, right):
 
 def msort(data, left, right):
     if left < right:
-        middle = (left + right) / 2
+        middle = int((left + right) / 2)
         msort(data, left, middle)
         msort(data, middle+1, right)
         merge(data, left, middle, right)
@@ -50,8 +52,8 @@ def merge_sort(data):
 data = [1, 3, 8, 5, 6, 7, 4, 9, 2]
 print('\nbefore merge sort')
 for i in data:
-    print i,
+    print(i,)
 merge_sort(data)
 print('\nafter merge sort')
 for i in data:
-    print i,
+    print(i,)

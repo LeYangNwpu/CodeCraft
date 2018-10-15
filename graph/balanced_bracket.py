@@ -17,6 +17,10 @@ Ref:
     https://www.geeksforgeeks.org/check-for-balanced-parentheses-in-an-expression/
     https://www.geeksforgeeks.org/check-balanced-parentheses-expression-o1-space/
     https://www.geeksforgeeks.org/minimum-number-of-bracket-reversals-needed-to-make-an-expression-balanced/
+Questions:
+    Actually, for a legal expression, '(', '[', '{' should occur in order
+    e.g., '()' must be inside '[]'
+    how to implement this? follow the second way
 '''
 
 def inverse_char(cha):

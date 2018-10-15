@@ -5,7 +5,7 @@ Problem:
 Ways:
     Maintain two heaps, min heap and max heap
     The max heap stores the smaller half of the data, while the min heap stores the bigger half of the data
-    For a new data, the heap with less element should be insert on element
+    For a new data, the heap with less element should be insert one element
 '''
 
 def heapify_max(arr, s, n):
