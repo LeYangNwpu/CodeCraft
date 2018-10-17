@@ -2,30 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77e6adc8-9617-41be-b302-8c1034a57461" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/dynamic_program/largest_sum_continuous_subarray.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/heap/continuous_median.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/heap/min_heap_construction.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/recursion/test.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sort algorithm/test.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/string/test.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/z_interview_questions/save_universe.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/z_interview_questions/test.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/linked_list/two_number_sum.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dynamic_program/matrix_chain_multiplication.py" afterPath="$PROJECT_DIR$/dynamic_program/matrix_chain_multiplication.py" />
-      <change beforePath="$PROJECT_DIR$/dynamic_program/palindrome_partitation.py" afterPath="$PROJECT_DIR$/dynamic_program/palindrome_partitation.py" />
-      <change beforePath="$PROJECT_DIR$/graph/balanced_bracket.py" afterPath="$PROJECT_DIR$/graph/balanced_bracket.py" />
-      <change beforePath="$PROJECT_DIR$/heap/heap_sort.py" afterPath="$PROJECT_DIR$/heap/heap_sort.py" />
-      <change beforePath="$PROJECT_DIR$/heap/midean_of_stream.py" afterPath="$PROJECT_DIR$/heap/midean_of_stream.py" />
-      <change beforePath="$PROJECT_DIR$/linked_list/remove_kth_node.py" afterPath="$PROJECT_DIR$/linked_list/remove_kth_node.py" />
-      <change beforePath="$PROJECT_DIR$/recursion/permutation.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/recursion/permutations.docx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/recursion/permutations.py" afterPath="$PROJECT_DIR$/recursion/permutations.py" />
-      <change beforePath="$PROJECT_DIR$/sort algorithm/MergeSort.docx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sort algorithm/MergeSort.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sort algorithm/QuickSort.py" afterPath="$PROJECT_DIR$/sort algorithm/QuickSort.py" />
-      <change beforePath="$PROJECT_DIR$/sort algorithm/merge_sort.py" afterPath="$PROJECT_DIR$/sort algorithm/merge_sort.py" />
-      <change beforePath="$PROJECT_DIR$/string/caesar_cipher.py" afterPath="$PROJECT_DIR$/string/caesar_cipher.py" />
-      <change beforePath="$PROJECT_DIR$/string/longest_palindromic_string.py" afterPath="$PROJECT_DIR$/string/longest_palindromic_string.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,12 +13,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="save_universe.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/z_interview_questions/save_universe.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -59,7 +37,7 @@
       <file leaf-file-name="milk_tea.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contest/Google_2018_RoundE/milk_tea.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
+            <state relative-caret-position="2160">
               <caret line="81" column="16" lean-forward="false" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -68,11 +46,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/z_interview_questions/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+            <state relative-caret-position="1647">
+              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="two_number_sum.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/linked_list/two_number_sum.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -130,7 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/string/longest_substring_without_repeating.py" />
         <option value="$PROJECT_DIR$/string/longest_unique_substr.py" />
         <option value="$PROJECT_DIR$/string/KMP_pattern_match.py" />
         <option value="$PROJECT_DIR$/array/matrix_rotation.py" />
@@ -181,10 +168,11 @@
         <option value="$PROJECT_DIR$/recursion/test.py" />
         <option value="$PROJECT_DIR$/z_interview_questions/save_universe.py" />
         <option value="$PROJECT_DIR$/z_interview_questions/test.py" />
+        <option value="$PROJECT_DIR$/linked_list/two_number_sum.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1456" />
@@ -239,8 +227,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -256,22 +242,18 @@
             <path>
               <item name="CodeCraft" type="b2602c69:ProjectViewProjectNode" />
               <item name="CodeCraft" type="462c0819:PsiDirectoryNode" />
-              <item name="contest" type="462c0819:PsiDirectoryNode" />
-              <item name="Google_2018_RoundE" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CodeCraft" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CodeCraft" type="462c0819:PsiDirectoryNode" />
-              <item name="z_interview_questions" type="462c0819:PsiDirectoryNode" />
+              <item name="linked_list" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/z_interview_questions/save_universe.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/linked_list/two_number_sum.py" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunDashboard">
@@ -384,12 +366,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/z_interview_questions" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/linked_list" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="CodeCraft" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/z_interview_questions/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/linked_list/two_number_sum.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -466,19 +448,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2028451" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2028451" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882273" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.124047875" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882273" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3460283" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.132753" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882273" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991881" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -533,13 +514,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sort algorithm/insert_sort.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/heap/test.py" />
     <entry file="file://$PROJECT_DIR$/sort algorithm/heap_sort.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -818,7 +792,7 @@
     <entry file="file://$PROJECT_DIR$/z_interview_questions/save_universe.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -833,7 +807,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/contest/Google_2018_RoundE/milk_tea.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
+        <state relative-caret-position="2160">
           <caret line="81" column="16" lean-forward="false" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -843,8 +817,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/z_interview_questions/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+        <state relative-caret-position="1647">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linked_list/two_number_sum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
           <folding />
         </state>
       </provider>
