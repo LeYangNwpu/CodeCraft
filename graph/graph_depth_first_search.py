@@ -61,7 +61,7 @@ g.add_edge(2, 3)
 g.add_edge(3, 3)
 
 print("Following is DFS from (starting from vertex 2)")
-# g.depth_first_search(0)
-g.dfs_iter(0)
+g.depth_first_search(0)
+# g.dfs_iter(0)
 
 
