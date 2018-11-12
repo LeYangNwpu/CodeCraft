@@ -21,7 +21,7 @@ pd.options.display.float_format = '{:.1f}'.format
 california_housing_dataframe = pd.read_csv("https://download.mlcc.google.cn/mledu-datasets/california_housing_train.csv", sep=",")
 california_housing_dataframe = california_housing_dataframe.reindex(np.random.permutation(california_housing_dataframe.index))
 california_housing_dataframe['median_house_value'] /= 1000.0
-print(california_housing_dataframe.describe())
+# print(california_housing_dataframe.describe())
 
 # define feature
 '''strange for use [[]] and []'''
@@ -42,11 +42,11 @@ linear_regressor = tf.estimator.LinearRegressor(feature_columns=features_columns
 def my_input_fn(features, targets, batch_size=1, shuffle=True, num_epochs=None):
     """
     Trains a Linear Regression model of one feature
-    :param features: 
-    :param targets: 
-    :param batch_size: 
-    :param shuffle: 
-    :param num_epochs: 
+    :param features:
+    :param targets:
+    :param batch_size:
+    :param shuffle:
+    :param num_epochs:
     :return: Tuple of (features, labels) for next data batch
     """
     # convert pandas data to dict of np.array
@@ -65,7 +65,7 @@ def my_input_fn(features, targets, batch_size=1, shuffle=True, num_epochs=None):
 
 '''why should we use lambda function to construct the input for train?'''
 # train the model
-_ = linear_regressor.train(input_fn=lambda: my_input_fn(my_feature, targets))
+_ = linear_regressor.train(input_fn=lambda: my_input_fn(my_feature, targets), steps=100)
 
 # create an input function for predictions
 prediction_input_fn = lambda: my_input_fn(my_feature, targets, num_epochs=1, shuffle=False)
@@ -98,21 +98,21 @@ y_0 = weight * x_0 + bias
 y_1 = weight * x_1 + bias
 
 # plot the regression line
-plt.plot([x_0, y_0], [x_1, y_1], c="r")
+plt.plot([x_0, x_1], [y_0, y_1], c="r")
 plt.ylabel("median house value")
 plt.xlabel("total rooms")
 '''what is the meaning of scatter'''
-plt.scatter(sample["total_rooms"], sample["median house value"])
+plt.scatter(sample["total_rooms"], sample["median_house_value"])
 plt.show()
 
 
-def train_model(learning_rate, steps, batch_size, input_features="total room"):
+def train_model(learning_rate, steps, batch_size, input_features="total_rooms"):
     """
     Trainin a linear regression model of one-hot value
     :param learning_rate:
-    :param steps:
+    :param steps: total number of training steps
     :param batch_size:
-    :param input_features:
+    :param input_features: A string specifying a column from '***.csv' file to use as input feature
     :return:
 
     """
@@ -122,8 +122,8 @@ def train_model(learning_rate, steps, batch_size, input_features="total room"):
 
     my_feature = input_features
     my_feature_data = california_housing_dataframe[[my_feature]]
-    my_label = "median house value"
-    targets = california_housing_dataframe()[my_label]
+    my_label = "median_house_value"
+    targets = california_housing_dataframe[my_label]
 
     # create feature columns
     feature_columns = [tf.feature_column.numeric_column(my_feature)]
@@ -133,9 +133,9 @@ def train_model(learning_rate, steps, batch_size, input_features="total room"):
     prediction_input_fn = lambda: my_input_fn(my_feature_data, targets, num_epochs=1, shuffle=False)
 
     # create a linear regressor object
-    my_optimizer = tf.train.GradientDescentOptimizer(learning_rate=1e-7)
+    my_optimizer = tf.train.GradientDescentOptimizer(learning_rate=learning_rate)
     my_optimizer = tf.contrib.estimator.clip_gradients_by_norm(my_optimizer, 5.0)
-    linear_regressor = tf.estimator.LinearRegressor(feature_columns=features_columns, optimizer=my_optimizer)
+    linear_regressor = tf.estimator.LinearRegressor(feature_columns=feature_columns, optimizer=my_optimizer)
 
     # set up to plot
     plt.figure(figsize=(15, 6))
@@ -194,13 +194,5 @@ def train_model(learning_rate, steps, batch_size, input_features="total room"):
     print("Final RMSE error on training data: %.2f" % root_mean_square_error)
 
 
-train_model(learning_rate=1e-5, steps=500, batch_size=5)
-
-
-
-
-
-
-
-
+train_model(learning_rate=2e-5, steps=500, batch_size=5)
 
