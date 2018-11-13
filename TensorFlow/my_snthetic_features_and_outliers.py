@@ -146,6 +146,38 @@ def train_model(learning_rate, steps, batch_size, input_features="total_rooms"):
 
     print("Final RMSE error on training data: %.2f" % root_mean_square_error)
 
+    return calibration_data
 
-train_model(learning_rate=2e-5, steps=500, batch_size=5)
+
+california_housing_dataframe["rooms_per_person"] = (
+        california_housing_dataframe["total_rooms"] / california_housing_dataframe["population"])
+calibration_data = train_model(
+    learning_rate=0.05,
+    steps=500,
+    batch_size=5,
+    input_features="rooms_per_person")
+
+# analyse the outliers
+plt.figure(figsize=(15, 6))
+plt.subplot(1, 2, 1)
+plt.scatter(calibration_data["Predictions"], calibration_data["Targets"])
+# show histogram
+plt.subplot(1, 2, 2)
+_ = california_housing_dataframe["rooms_per_person"].hist()
+
+
+# filter the outliers, train and show again
+california_housing_dataframe["rooms_per_person"] = (
+    california_housing_dataframe["rooms_per_person"]).apply(lambda x: min(x, 5))
+
+_ = california_housing_dataframe["rooms_per_person"].hist()
+
+calibration_data = train_model(
+    learning_rate=0.05,
+    steps=500,
+    batch_size=5,
+    input_features="rooms_per_person")
+
+_ = plt.scatter(calibration_data["Predictions"], calibration_data["Targets"])
+
 
