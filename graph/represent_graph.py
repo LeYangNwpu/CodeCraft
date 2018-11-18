@@ -94,10 +94,10 @@ class Graph_adj:
 
     def print_graph(self):
         for i in range(self.V):
-            print("Adjacency list of vertex {}\n head".format(i), end="")
+            print("Adjacency list of vertex {}\n head".format(i))
             temp = self.verts[i]
             while temp:
-                print(" -> {}".format(temp.ver), end="")
+                print(" -> {}".format(temp.ver))
                 temp = temp.next
             print(" \n")
 
