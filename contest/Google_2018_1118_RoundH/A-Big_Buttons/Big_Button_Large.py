@@ -1,6 +1,8 @@
 '''
 For large dataset
 '''
+import TriePrefixFilter
+
 
 def filter_forb_prex(strs_forb):
     strs_forb_real = list()
@@ -32,7 +34,7 @@ def cal_win_num(seqs_forb, num_press):
 
 
 in_data_file = 'A-large-practice.in'
-out_data_file = 'A-large-practice.out'
+out_data_file = 'A-large-practice_trie.out'
 
 fid_in = open(in_data_file, 'r')
 fid_out = open(out_data_file, 'w')
@@ -50,7 +52,8 @@ for itest in range(num_all):
         string = fid_in.readline()
         seqs_forb.append(string[:-1])
 
-    seqs_forb_real = filter_forb_prex(seqs_forb)
+    # seqs_forb_real = filter_forb_prex(seqs_forb)
+    seqs_forb_real = TriePrefixFilter.filter_forb_prex(seqs_forb)
 
     num_win = cal_win_num(seqs_forb_real, num_press)
 
